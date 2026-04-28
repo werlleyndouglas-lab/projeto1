@@ -101,10 +101,18 @@ body {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
+    min-width: 0; /* ESSENCIAL */
 }
 
 .card.destaque {
     border: 2px solid red;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
 }
 
 /* DEPOIMENTOS */
@@ -164,4 +172,14 @@ body {
         margin-top: 20px;
         width: 200px;
     }
+}
+
+
+img {
+  width: 300px; /* Define a largura fixa */
+  height: auto; /* Mantém a proporção automaticamente */
+}
+
+html {
+    scroll-behavior: smooth;
 }

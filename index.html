@@ -1,196 +1,222 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CX-BR TOUR</title>
-    <link rel="stylesheet" href="projeto_cidade_23042026_styles.css">
-</head>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
 
-    <!-- HEADER -->
-    <header class="topo">
-        <nav class="nav">
-            <h2 class="logo">CX‑BR TOUR</h2>
-            <ul class="menu">
-                <li><a href="#JoaoPessoa">João Pessoa</a></li>
-            <li><a href="#SaoPaulo">São Paulo</a></li>
-            <li><a href="#BeloHorizonte">Belo Horizonte</a></li>
-            <li><a href="#Fortaleza">Fortaleza</a></li>
-            <li><a href="#Brasilia">Brasília</a></li>
-            <li><a href="#Natal">Natal</a></li>
-            </ul>
-        </nav>
-    </header>
+/* HEADER */
+.topo {
+    background: #092244;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-texto">
-            <h1>Explore o Brasil com a CX‑BR TOUR</h1>
-            <p>Viagens completas, passagens, hospedagem e aluguel de carros em um só lugar.</p>
-            <a class="botao" href="https://chat.whatsapp.com/G9Alk8f8efK9uGbZdSt8Oo" target="_blank" rel="noopener noreferrer">Entre em Contato</a>
-        </div>
+.nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;              /* FLEXBOX */
+    justify-content: space-between;
+    align-items: center;
+}
 
-        <img class="hero-img" src="https://iili.io/BPDLwUF.md.png" alt="Logo CX-BR TOUR">
-    </section>
+.logo {
+    color: #f0b153;
+}
 
-    <!-- GRID DE FUNCIONALIDADES -->
-    <section class="grid-funcionalidades" id="Pacotes">
-        <h1>Destinos em alta</h1>
-        <br/>
+.menu {
+    list-style: none;
+    display: flex;              /* FLEXBOX */
+    gap: 20px;
+}
 
-        <div class="grid">
-            <div class="card" id="JoaoPessoa">
-                <img src="https://denomades.imgix.net/destinos/recife/1640/joao-pessoa.jpg?w=720&h=392&fit=crop&q=90&auto=format,compress&fm=webp" alt="Cidade de João Pessoa">
-                <br><br>
-                <h2>João Pessoa, PB</h2>
-                <br>
+.menu a {
+    color: rgb(145, 233, 233);
+    text-decoration: none;
+    font-weight: bold;
+}
 
-                <h3>Turismo</h3>
-                <p>Conhecida como “Porta do Sol”, João Pessoa é famosa por ser a cidade onde o sol nasce primeiro nas Américas. Destaca-se pelas praias tranquilas, águas mornas e cenários naturais preservados. Entre os principais pontos turísticos estão a Praia de Tambaú, Cabo Branco, o Farol do Cabo Branco (ponto mais oriental das Américas), a Estação Ciência de Niemeyer e o pôr do sol na Praia do Jacaré ao som do Bolero de Ravel.</p>
-                <br>
+.menu a:hover {
+    color: #ffffff;
+}
 
-                <h3>Esporte</h3>
-                <p>A cidade oferece ótimas condições para esportes ao ar livre, como corrida, ciclismo e caminhadas na orla, que possui trechos fechados para veículos em horários específicos. Esportes náuticos como stand up paddle, caiaque e mergulho também são populares devido às águas calmas e claras. João Pessoa recebe eventos esportivos regionais e nacionais, especialmente nas áreas de triathlon e beach sports.</p>
-                <br>
+/* HERO */
+.hero {
+    display: flex;              /* FLEXBOX */
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #092244, #6497af);
+    color: white;
+}
 
-                <h3>Gastronomia</h3>
-                <p>A culinária paraibana é rica em sabores regionais. Pratos típicos incluem rubacão, carne de sol com macaxeira, galinha de capoeira, tapiocas recheadas e peixes frescos da costa. Frutos do mar são destaque, especialmente camarão e lagosta. Doces tradicionais como bolo de rolo, cartola e cocadas complementam a experiência gastronômica. A cidade também possui mercados e feirinhas famosas, como a Feirinha de Tambaú.</p>
+.cidade-hero {
+    background: linear-gradient(135deg, #003366, #0055aa);
+}
 
-            </div>
+.hero-texto {
+    max-width: 50%;
+}
 
-            <div class="card" id="SaoPaulo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb27vCbKAz4uocQBh0JZ2_CPVGmfZMHHmONw&s" alt="Cidade de São Paulo">
-                <br> <br>
-                <h2>São Paulo, SP</h2>
-                <br/>
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #f0b153;
+    color: #092244;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-                <h3>Turismo</h3>
-                <p>Maior metrópole do Brasil, São Paulo é um polo cultural, arquitetônico e urbano. A cidade oferece museus renomados como MASP, MAM e Museu do Ipiranga, além da Avenida Paulista, Parque Ibirapuera e bairros icônicos como Liberdade e Vila Madalena. A vida noturna é uma das mais intensas do mundo, com bares, teatros, casas de show e eventos 24 horas.</p>
-                <br>
-                
-                <h3>Esporte</h3>
-                <p>São Paulo é referência esportiva nacional, abrigando grandes clubes como Corinthians, Palmeiras e São Paulo FC. A cidade recebe eventos internacionais como Fórmula 1 (GP Brasil), Corrida de São Silvestre e campeonatos de vôlei, basquete e atletismo. Parques e ciclovias oferecem espaços para corrida, ciclismo e atividades ao ar livre.</p>
-                <br>
+.hero-img {
+    width: 280px;
+    border-radius: 10px;
+}
 
-                <h3>Gastronomia</h3>
-                <p>A culinária paulistana é uma das mais diversas do mundo, influenciada por imigração italiana, japonesa, árabe e nordestina. Pratos tradicionais incluem pizza paulistana, sanduíche de mortadela, pastel de feira, coxinha e o clássico bauru. A cidade também é conhecida por restaurantes premiados, mercados gastronômicos e ingredientes regionais como cambuci, jabuticaba e mandioca.</p>
+/* GRID GERAL */
+.grid-funcionalidades {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-            </div>
+.grid {
+    display: grid;              /* GRID LAYOUT */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-            <div class="card" id="BeloHorizonte">
-                <img src="https://img.freepik.com/fotos-premium/vista-aerea-da-praca-da-liberdade-em-belo-horizonte-minas-gerais-brasil_361869-1225.jpg" alt="Cidade de Belo Horizonte">
-                <br><br>
-                <h2>Belo Horizonte, MG</h2>
-                <br>
-                
-                <h3>Turismo</h3>
-                <p>Conhecida por sua hospitalidade e por ser porta de entrada para as cidades históricas de Minas Gerais, Belo Horizonte combina urbanismo moderno com cultura tradicional. Entre os destaques estão a Lagoa da Pampulha (conjunto arquitetônico de Oscar Niemeyer), o Mirante do Mangabeiras, o Mercado Central e a Praça da Liberdade, que reúne museus e centros culturais. A cidade também é famosa por seus bares, sendo considerada a “capital dos botecos”.</p>
-                <br>
-                
-                <h3>Esporte</h3>
-                <p>A cidade possui forte tradição esportiva, com clubes de grande expressão nacional como Atlético Mineiro, Cruzeiro e América. O Estádio Mineirão é palco de grandes eventos esportivos e culturais. BH também oferece espaços amplos para corrida, ciclismo e atividades ao ar livre, como a orla da Pampulha e o Parque Municipal. Eventos como a Volta Internacional da Pampulha atraem atletas de todo o país.</p>
-                <br>
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    min-width: 0; /* ESSENCIAL */
+}
 
-                <h3>Gastronomia</h3>
-                <p>A culinária mineira é uma das mais queridas do Brasil, marcada por sabores caseiros e ingredientes regionais. Pratos típicos incluem feijão tropeiro, frango com quiabo, tutu à mineira, torresmo, costelinha e o famoso pão de queijo. Doces tradicionais como doce de leite, goiabada cascão e ambrosia também são destaque. A cidade possui uma cena gastronômica vibrante, com bares premiados e restaurantes que valorizam a cozinha mineira contemporânea.</p>
+.card.destaque {
+    border: 2px solid red;
+}
 
-            </div>
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
 
-            <div class="card" id="Fortaleza">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qRoDg-Xr5DaVdGsJOmRMNyEMrEswTKILAg&amp;s" alt="Cidade de Fortaleza">
-                <br><br>
-                <h2>Fortaleza, CE</h2>
-                <br>
+/* DEPOIMENTOS */
+.depoimentos {
+    background: #fff;
+    padding: 40px 20px;
+}
 
-                <h3>Turismo</h3>
-                <p>Fortaleza é uma das capitais mais visitadas do Nordeste, famosa por suas praias de águas mornas, falésias coloridas, dunas e lagoas. Entre os principais pontos turísticos estão a Praia do Futuro, a Beira-Mar, o Beach Park (um dos maiores parques aquáticos da América Latina), o Centro Dragão do Mar de Arte e Cultura, o Theatro José de Alencar e a Catedral Metropolitana. A cidade combina natureza exuberante com forte identidade cultural.</p>
-                <br>
-                
-                <h3>Esporte</h3>
-                <p>O futebol é o esporte mais popular, com destaque para Fortaleza, Ceará e Ferroviário. A cidade abriga o Centro de Formação Olímpica do Nordeste, um dos maiores complexos esportivos do país, além da Arena Castelão, palco de grandes competições nacionais e internacionais. As praias também favorecem esportes como kitesurf, vôlei de praia, corrida e ciclismo.</p>
-                <br>
+.depoimentos-container {
+    display: flex;              /* FLEXBOX */
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-                <h3>Gastronomia</h3>
-                <p>A culinária cearense é rica em sabores marcantes e frutos do mar. Pratos típicos incluem baião de dois, carne de sol, moqueca cearense, peixadas e o tradicional caranguejo das quintas-feiras. Camarão, lagosta e frutos do mar frescos são amplamente apreciados, especialmente na região do Mucuripe. Doces como rapadura, tapiocas recheadas e sobremesas com frutas regionais também fazem parte da identidade gastronômica local.</p>
+.depoimento {
+    background: #e8e8e8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 260px;
+}
 
-            </div>
+/* RODAPÉ */
+.rodape {
+    background: #092244;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-            <div class="card" id="Brasilia">
-                <img src="https://t3.ftcdn.net/jpg/04/55/02/00/360_F_455020005_Xj2egeKHpVbmid7jqEj63B8su5bbgRMX.jpg" alt="Distrito Federal">
-                <br><br>
-                <h2>Brasília, DF</h2>
-                <br>
+.rodape ul {
+    list-style: none;
+    display: flex;              /* FLEXBOX */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
 
-                <h3>Turismo</h3>
-                <p>Capital do Brasil, planejada por Lúcio Costa e com arquitetura icônica de Oscar Niemeyer. Patrimônio Cultural da Humanidade pela UNESCO. Destaques incluem Esplanada dos Ministérios, Congresso Nacional, Catedral Metropolitana, Palácio da Alvorada e o Lago Paranoá, que oferece lazer e esportes náuticos.</p>
-                
-                <p>Brasília possui forte tradição em esportes coletivos e eventos nacionais. O Estádio Mané Garrincha é um dos maiores do país e já sediou Copa das Confederações e Copa do Mundo. A cidade também conta com parques amplos, como o Parque da Cidade, ideais para corrida, ciclismo e atividades ao ar livre.</p>
-                <br>
+.rodape a {
+    color: #f0b153;
+    text-decoration: none;
+}
 
-                <h3>Gastronomia</h3>
-                <p>Culinária marcada pela mistura de influências de todas as regiões do Brasil. Pratos típicos incluem peixes do cerrado, galinhada, pamonha, empadão goiano e panelada. A cidade também é conhecida por feiras gastronômicas, cafés modernos e restaurantes premiados, além de ingredientes regionais como pequi, baru e mandioca.</p>
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
 
-            </div>
+    .hero-texto {
+        max-width: 100%;
+    }
 
-            <div class="card" id="Natal">
-                <img src="https://www.cattanisul.com.br/arquivos/media/conteudo/cidades-turisticas/genipabu6-holiday-inn-hoteis-natal.jpg.640x360-20-32-7306.jpg" alt="Cidade de Natal">
-                <br><br>
-                <h2>Natal, RN</h2>
-                <br>
+    .hero-img {
+        margin-top: 20px;
+        width: 200px;
+    }
+}
 
-                <h3>Turismo</h3>
-                <p>Conhecida como “Cidade do Sol”, Natal é famosa por suas praias paradisíacas, dunas impressionantes e águas mornas o ano inteiro. Destaques incluem as Dunas de Genipabu, o Morro do Careca, a Praia de Ponta Negra, o Forte dos Reis Magos e passeios de buggy considerados os melhores do Brasil. A cidade combina natureza exuberante com atrações históricas e culturais.</p>
-                <br>
-                
-                <h3>Esporte</h3>
-                <p>Esportes ao ar livre são muito populares graças ao clima ensolarado. O litoral favorece surf, kitesurf, mergulho e stand up paddle. As dunas são palco de passeios radicais de buggy e sandboard. O Estádio Arena das Dunas, construído para a Copa do Mundo, recebe eventos esportivos e culturais durante todo o ano.</p>
-                <br>
 
-                <h3>Gastronomia</h3>
-                <p>A culinária potiguar é marcada por frutos do mar frescos e sabores regionais. Pratos típicos incluem ginga com tapioca, carne de sol com macaxeira, paçoca de carne, baião de dois e moquecas. Camarão e lagosta são destaques, especialmente na tradicional “quinta do caranguejo”. Doces regionais como cartola e tapiocas recheadas também fazem parte da identidade gastronômica local.</p>
+img {
+  width: 300px; /* Define a largura fixa */
+  height: auto; /* Mantém a proporção automaticamente */
+}
 
-            </div>
+html {
+    scroll-behavior: smooth;
+}
 
-        </div>
-    </section>
 
-    <!-- DEPOIMENTOS -->
-    <section class="depoimentos">
-        <h2>O que nossos clientes dizem</h2>
-        <br><br>
 
-        <div class="depoimentos-container">
-            <div class="depoimento">
-                <p>"A melhor experiência de viagem que já tive!"</p>
-                <span>- Maria</span>
-            </div>
+/* BOTÃO WHATSAPP */
 
-            <div class="depoimento">
-                <p>"Atendimento excelente e preços justos."</p>
-                <span>- Carlos</span>
-            </div>
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: pulse 1.5s infinite;
+}
 
-            <div class="depoimento">
-                <p>"Viajar ficou muito mais fácil com a CX‑BR TOUR."</p>
-                <span>- Fernanda</span>
-            </div>
-        </div>
-    </section>
+.whatsapp-icon {
+    width: 70%;
+    height: 70%;
+}
 
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-        <p>© 2024 - CX‑BR TOUR</p>
-        <ul>
-            <li><a href="#JoaoPessoa">João Pessoa, PB</a></li>
-            <li><a href="#SaoPaulo">São Paulo, SP</a></li>
-            <li><a href="#BeloHorizonte">Belo Horizonte, MG</a></li>
-            <li><a href="#Fortaleza">Fortaleza, CE</a></li>
-            <li><a href="#Brasilia">Brasília, DF</a></li>
-            <li><a href="#Natal">Natal, RN</a></li>
-        </ul>
-    </footer>
-
-</body>
-</html>
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

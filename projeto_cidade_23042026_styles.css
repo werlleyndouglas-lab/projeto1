@@ -221,22 +221,34 @@ html {
     }
 }
 
-
-/* HOVER DOS CARDS */
+/* HOVER DOS CARDS – COMPATÍVEL COM TODOS OS NAVEGADORES */
 .card {
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
     transform: translateY(-10px);
+
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
 /* Zoom suave na imagem */
 .card img {
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
 }
 
 .card:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transform: scale(1.05);
 }
